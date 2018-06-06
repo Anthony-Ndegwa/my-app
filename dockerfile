@@ -1,5 +1,5 @@
 # base image
-FROM node:10.1.0
+FROM node:v10.3.0
 
 RUN sudo apt-get install npm
 
