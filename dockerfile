@@ -1,6 +1,11 @@
 # base image
 FROM node:10.1.0
 
+RUN sudo apt-get update
+RUN sudo apt-get install nodejs
+
+RUN sudo apt-get install npm
+
 WORKDIR /home/anto/my-app
 
 ENV PATH /home/anto/my-app/node_modules/.bin:$PATH
